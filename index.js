@@ -38,7 +38,7 @@ function addNewEmployee() {
         });
 }
 
-//
+// Add Manager Function
 function addManager() {
     inquirer
         .prompt([
@@ -75,7 +75,7 @@ function addManager() {
         });
 }
 
-//
+// Add Engineer Function
 function addEngineer() {
     inquirer
         .prompt([
@@ -112,7 +112,7 @@ function addEngineer() {
         })
 }
 
-// 
+// Add Intern Function
 function addIntern() {
     inquirer
         .prompt([
