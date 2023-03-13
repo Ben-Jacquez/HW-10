@@ -2,13 +2,8 @@
 ## Description
 Command Line Application That Uses Inquirer To Ask User For Team Member Information. Following User Input HTML Is Generated Displaying Teams Information. 
 
-## Deployed Website
-[Deployed Version Here]()
-![Website Screenshot]()
-
 ## Table of Contents
 - [Description](#description)
-- [Deployed Website](#deployed-website)
 - [Usage](#usage)
 - [Installation](#installation)
 - [Tests](#tests)
