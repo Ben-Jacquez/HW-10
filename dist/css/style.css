@@ -1,0 +1,23 @@
+header {
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, navy
+    , rgb(135, 143, 185));
+    border: 3px;
+    border-color: rgb(3, 3, 67);
+    border-style: solid;
+    border-radius: 50px;
+    padding: 1em;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+
+

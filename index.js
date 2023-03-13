@@ -5,6 +5,8 @@ const fs = require("fs");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+// Const For Generating HTML.js
+const generateHTML = require("./dist/html")
 // Array New Team Members Are Pushed Too
 const team = [];
 
@@ -15,8 +17,8 @@ function addNewEmployee() {
         .prompt([
             {
                 type: "list",
-                message: "Which Type Of Employee Is Joining The Team?",
-                choices: "Manager, Engineer, Intern",
+                message: "Which Class Of Employee Is Joining The Team?",
+                choices: ["Manager", "Engineer", "Intern", "Finish"], 
                 name: "newEmployee",
             }
         ])
@@ -31,7 +33,7 @@ function addNewEmployee() {
                 addIntern();
             }
             else {
-                return console.log(err)
+                return writeHTML();
             }
         });
 }
@@ -148,3 +150,13 @@ function addIntern() {
 }
 
 // Function To Post Employee Info To HTML
+function writeHTML() {
+    fs.writeFile("index.html", generateHTML(team), (err) => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log("HTML Generated!")
+    })
+}
+
+addNewEmployee();
