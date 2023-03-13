@@ -24,7 +24,7 @@ Start Program By Running "node index.js" In The Console. Once Evoked Inquirer Pr
 3. Enter In Console "node index.js"
 
 ## Tests
-(4) Tests in __tests__ Folder For.
+(4) Tests in __tests__ Folder.
 
 Run Test By Entering "npm run test" In Console
 
@@ -35,5 +35,5 @@ Copyright © 2023 Benjamin Jacquez
 
 ## Contact Me
 If you have ideas to contribute or questions to ask you can contact me here:
-- [Github](https://github.com/Ben-Jacquez)
+- [Github: Ben-Jacquez](https://github.com/Ben-Jacquez)
 - Email: benjacquez.dev@gmail.com
