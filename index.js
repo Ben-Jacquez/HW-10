@@ -6,7 +6,7 @@ const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 // Const For Generating HTML.js
-const generateHTML = require("./dist/html")
+const generateSrc = require("./src/generate")
 // Array New Team Members Are Pushed Too
 const team = [];
 
@@ -44,22 +44,22 @@ function addManager() {
         .prompt([
             {
                 type: "input",
-                message: "",
+                message: "Enter Managers Full Name",
                 name: "name",
             },
             {
                 type: "input",
-                message: "input",
+                message: "Enter Employees New ID",
                 name: "id",
             },
             {
                 type: "input",
-                message: "",
+                message: "Enter Managers Email Address",
                 name: "email",
             },
             {
                 type: "input",
-                message: "",
+                message: "Enter Managers Phone Number",
                 name: "officeNumber",
             },
         ])
@@ -81,22 +81,22 @@ function addEngineer() {
         .prompt([
             {
                 type: "input",
-                message: "",
+                message: "Enter Engineers Full Name",
                 name: "name",
             },
             {
                 type: "input",
-                message: "input",
+                message: "Enter Employees New ID",
                 name: "id",
             },
             {
                 type: "input",
-                message: "",
+                message: "Enter Engineers Email Address",
                 name: "email",
             },
             {
                 type: "input",
-                message: "",
+                message: "Enter Engineers Github User Name",
                 name: "github",
             },
         ])
@@ -118,22 +118,22 @@ function addIntern() {
         .prompt([
             {
                 type: "input",
-                message: "",
+                message: "Enter Interns Full Name",
                 name: "name",
             },
             {
                 type: "input",
-                message: "input",
+                message: "Enter Employees New ID",
                 name: "id",
             },
             {
                 type: "input",
-                message: "",
+                message: "Enter Interns Email Address",
                 name: "email",
             },
             {
                 type: "input",
-                message: "",
+                message: "Enter Interns School",
                 name: "school",
             },
         ])
@@ -151,7 +151,7 @@ function addIntern() {
 
 // Function To Post Employee Info To HTML
 function writeHTML() {
-    fs.writeFile("index.html", generateHTML(team), (err) => {
+    fs.writeFile("index.html", generateSrc(team), (err) => {
         if (err) {
             return console.log(err);
         }
