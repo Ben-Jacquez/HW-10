@@ -1,6 +1,6 @@
 # Team-Profile-Generator
 ## Description
-
+Command Line Application That Uses Inquirer To Ask User For Team Member Information. Following User Input HTML Is Generated Displaying Teams Information. 
 
 ## Deployed Website
 [Deployed Version Here]()
@@ -16,15 +16,17 @@
 - [Contact Me](#contact-me)
 
 ## Usage
-
-
+Start Program By Running "node index.js" In The Console. Once Evoked Inquirer Prompts Ask User For Employee Information. Once Employee Profiles Are Done Being Collected, They Are Posted Onto HTML.
 
 ## Installation
 1. Clone Repository
-2. With Node: npm i dependencies
+2. Install Dependencies
+3. Enter In Console "node index.js"
 
 ## Tests
-N/A
+(4) Tests in __tests__ Folder For.
+
+Run Test By Entering "npm run test" In Console
 
 ## License
 [MIT License](https://opensource.org/license/mit/)
